@@ -27,3 +27,7 @@ X_test = sc.fit_transform(X_test)
 
 from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression()
+classifier.fit(X_train, y_train)
+
+y_pred = classifier.predict(X_test)
+
